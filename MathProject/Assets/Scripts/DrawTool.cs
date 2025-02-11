@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class Draw : MonoBehaviour
+public class DrawTool : MonoBehaviour
 {
-
+    private static DrawTool instance;
     [SerializeField] private float circleRadius;
     [SerializeField] private Vector3 targetVector;
     [SerializeField] private float rectangleX;
