@@ -15,12 +15,6 @@ public class BezierCurve : MonoBehaviour
 
     public bool drawInterpolation = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     void OnDrawGizmos()
     {
         //Get position of the curve handles
@@ -70,11 +64,5 @@ public class BezierCurve : MonoBehaviour
         Gizmos.DrawSphere(posO, 0.1f);
 
         Handles.DrawBezier(posA, posD, posB, posC, Color.white, null, 1f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
