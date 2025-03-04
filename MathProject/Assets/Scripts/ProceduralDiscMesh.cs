@@ -80,8 +80,6 @@ public class ProceduralDiscMesh : MonoBehaviour
         mesh.SetTriangles(triangles, 0);
         mesh.RecalculateNormals();
         mesh.SetUVs(0, uvs);
-        Debug.Log("uvs: " + uvs.Count);
-        Debug.Log("vertices: " + vertices.Count);
         return mesh;
     }
 
